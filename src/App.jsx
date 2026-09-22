@@ -8,7 +8,21 @@ export default function App(){
   return(
     <div className="app">
       <main className="content">
-        {selectedPage === null && (<h1>فهرست</h1>)}
+        {selectedPage === null && (
+        <div className="homepage">
+          <h1>فهرست</h1>
+
+          <div className="cards">
+            <div className="card">aa</div>
+            <div className="card">aaa</div>
+            <div className="card">bb</div>
+            <div className="card">bbb</div>
+            <div className="card">cc</div>
+            <div className="card">ccc</div>
+            <div className="card">dd</div>
+            <div className="card">ddd</div>
+          </div>
+        </div> )}
         {selectedPage === "A" && (
           <div>
           <h1>page A</h1>

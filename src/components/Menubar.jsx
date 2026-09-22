@@ -11,7 +11,7 @@ export default function Menubar({setSelectedPage}){
             </button>
 
             {isOpen && (
-                <div className="flex">
+                <div className="menu-center">
                     <h2>منو</h2>
                     <button onClick={()=>setSelectedPage("A")}>A</button>
                     <button onClick={()=>setSelectedPage("B")}>B</button>
