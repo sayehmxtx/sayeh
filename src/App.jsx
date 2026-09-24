@@ -1,5 +1,6 @@
 import { useState } from "react"
 import Menubar from "./components/Menubar"
+import Header from "./components/Header"
 
 export default function App(){
   const[selectedPage, setSelectedPage]= useState(null)
@@ -7,6 +8,9 @@ export default function App(){
   
   return(
     <div className="app">
+      
+      <Header/>
+
       <main className="content">
         {selectedPage === null && (
         <div className="homepage">
@@ -23,6 +27,7 @@ export default function App(){
             <div className="card">ddd</div>
           </div>
         </div> )}
+
         {selectedPage === "A" && (
           <div>
           <h1>page A</h1>
