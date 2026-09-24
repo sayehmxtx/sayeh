@@ -10,14 +10,16 @@ body{
 .app{
   min-height: 100vh;
   display: flex;
-  background: rgb(277,203,255);
+  background: white;
 }
 
 .content{
   flex: 1;
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding-left: 25%;
+  padding: 50px;
+  min-width: 0;
 }
 
 .content h1{
@@ -26,44 +28,22 @@ body{
 }
 
 .menubar{
-  height: 100vh;
-  background: white;
-  box-shadow: -8px 0 25px rgba(56, 0, 129, 0.082);
-  position: relative;
-  transition: width 0.3s ease;
-}
-
-.menubar.open{
   width: 280px;
-}
-
-.menubar.close{
-  width: 0;
-}
-
-.toggle-button {
-  position: absolute;
-  left: -35px;
-  top: 45%;
-  width: 30px;
-  height: 40px;
-  border: none;
-  background: rgb(132,46,245);
-  box-shadow: -5px 0 15px rgba(60,0,139);
-  font-size: 15px;
-  cursor: pointer;
+  height: 100vh;
+  flex-shrink: 0;
+  background: white;
+  box-shadow: -8px 0 25px black;
 }
 
 .menu-center {
   padding: 30px 0;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  gap: 0;
 }
 
 .menu-center h2{
   margin: 0 0 35px;
+  padding: 0 35px;
   font-size: 40px;
   font-weight: 400;
 }
@@ -72,18 +52,15 @@ body{
   display: block;
   width: 100%;
   padding: 15px 35px;
-  margin: 0;
   border: none;
-  background: rgb(132,46,245);
+  background: white;
   font-size: 20px;
   text-align: left;
   cursor: pointer;
 }
 
 .menu-center button:hover{
-  opacity: 0.5;
-  background: rgb(60,0,139);
-  box-shadow: 0 0 12px rgb(60,0,139);
+  background: #f5f5f5;
 }
 
 .items{
@@ -111,7 +88,6 @@ body{
 
 .homepage{
   width: 100%;
-  padding: 50px;
   background: white;
 }
 
@@ -123,17 +99,17 @@ body{
 }
 
 .cards{
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(4,200px);
+  grid-template-columns: repeat(4,1fr);
   gap: 30px;
-  justify-content: center;
 }
 
 .card{
-  width: 200px;
+  width: 100%;
   height: 200px;
-  background: rgb(277,203,255);
-  box-shadow: 08 8px 20px rgba(56, 0, 129, 0.082);
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 08);
   display: flex;
   align-items: center;
   justify-content: center;

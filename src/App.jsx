@@ -61,7 +61,7 @@ export default function App(){
           <h1>page D</h1>
           <div className="items">
             <button onClick={()=> setSelectedItem("dd")}>dd</button>
-            <button onClick={()=> setSelectedItem("ddd")}>dd</button>
+            <button onClick={()=> setSelectedItem("ddd")}>ddd</button>
           </div>
           {selectedItem === "dd"&& (<h2>dd</h2>)}
           {selectedItem === "ddd"&& (<h2>ddd</h2>)}
