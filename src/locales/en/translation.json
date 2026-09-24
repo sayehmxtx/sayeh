@@ -1,0 +1,34 @@
+{
+    "header":{
+        "name":"Name",
+        "home":"Home",
+        "contact":"Contact"
+    },
+
+    "menu":{
+        "title":"Menu",
+        "A":"A",
+        "B":"B",
+        "C":"C",
+        "D":"D"
+    },
+
+    "pages":{
+        "index":"Index",
+        "A":"Page A",
+        "B":"Page B",
+        "C":"Page C",
+        "D":"Page D"
+    },
+
+    "items":{
+        "aa":"aa",
+        "aaa":"aaa",
+        "bb":"bb",
+        "bbb":"bbb",
+        "cc":"cc",
+        "ccc":"ccc",
+        "dd":"dd",
+        "ddd":"ddd"
+    }
+}

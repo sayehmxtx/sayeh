@@ -1,13 +1,21 @@
-export default function Menubar({setSelectedPage}){
+import { useTranslation } from "react-i18next";
+
+export default function({setSelectedPage}){
+    const{t, i18n}=useTranslation()
+
     return(
-        <aside className="menubar">
-                <div className="menu-center">
-                    <h2>منو</h2>
-                    <button onClick={()=>setSelectedPage("A")}>A</button>
-                    <button onClick={()=>setSelectedPage("B")}>B</button>
-                    <button onClick={()=>setSelectedPage("C")}>C</button>
-                    <button onClick={()=>setSelectedPage("D")}>D</button>
-                </div>
+        <aside className="menubar" dir={i18n.language === "fa"?"rtl":"ltr"}>
+
+            <div className="menu-center">
+
+                <h2>{t("menu.title")}</h2>
+                <button onClick={()=> setSelectedPage("A")}>{t("menu.A")}</button>
+                <button onClick={()=> setSelectedPage("B")}>{t("menu.B")}</button>
+                <button onClick={()=> setSelectedPage("C")}>{t("menu.C")}</button>
+                <button onClick={()=> setSelectedPage("D")}>{t("menu.D")}</button>
+                
+            </div>
+
         </aside>
     )
 }

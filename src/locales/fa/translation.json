@@ -1,0 +1,34 @@
+{
+    "header":{
+        "name":"نام",
+        "home":"خانه",
+        "contact":"تماس"
+    },
+
+    "menu":{
+        "title":"منو",
+        "A":"A",
+        "B":"B",
+        "C":"C",
+        "D":"D"
+    },
+
+    "pages":{
+        "index":"فهرست",
+        "A":"صفحه A",
+        "B":"صفحه B",
+        "C":"صفحه C",
+        "D":"صفحه D"
+    },
+
+    "items":{
+        "aa":"aa",
+        "aaa":"aaa",
+        "bb":"bb",
+        "bbb":"bbb",
+        "cc":"cc",
+        "ccc":"ccc",
+        "dd":"dd",
+        "ddd":"ddd"
+    }
+}
